@@ -1,0 +1,50 @@
+html,
+body {
+  background-color: #666;
+}
+.diagram svg {
+  width: 500px;
+  height: 400px;
+  background-color: #888;
+}
+.diagram svg .node {
+  cursor: move;
+}
+.diagram svg .node .device {
+  stroke: #444;
+  stroke-width: 2px;
+  fill: #666;
+}
+.diagram svg .node text {
+  fill: #eee;
+  font-family: verdana, sans-serif;
+  font-size: 18px;
+}
+.diagram svg .node.red .device {
+  stroke: #f33;
+}
+.diagram svg .node.black .device {
+  stroke: #333;
+}
+.diagram svg .node.filter .device {
+  stroke: #3f3;
+}
+.diagram svg .node.network .device {
+  stroke: #33f;
+}
+.diagram svg .node.network text {
+  font-size: 10px;
+}
+.diagram svg .node[data-status=bad] .device {
+  fill: #a44;
+}
+.diagram svg .node[data-status=good] .device {
+  fill: #4a4;
+}
+.diagram svg .node[data-status=soso] .device {
+  fill: #a84;
+}
+.diagram svg .link {
+  stroke: #444;
+  stroke-width: 2px;
+}
