@@ -1,0 +1,20 @@
+{
+  "name": "d3-test",
+  "version": "0.0.0",
+  "authors": [
+    "geniusburger <jdst8-git@yahoo.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout": "~3.3.0",
+    "bootstrap": "~3.3.4",
+    "d3": "~3.5.5"
+  }
+}

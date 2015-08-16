@@ -1,0 +1,72 @@
+
+html, body {
+	background-color: #666;
+}
+
+.diagram {
+	svg {
+		width: 500px;
+		height: 400px;
+		background-color: #888;
+		.node {
+			.device {
+				stroke: #444;
+				stroke-width: 2px;
+				fill: #666;
+			}
+
+			text {
+				fill: #eee;
+				font-family: verdana, sans-serif;
+				font-size: 18px;
+			}
+
+			cursor: move;
+
+			&.red .device {
+				stroke: #f33;
+			}
+
+			&.black .device {
+				stroke: #333;
+			}
+
+			&.filter .device {
+				stroke: #3f3;
+			}
+
+			&.network
+			{
+				.device {
+					stroke: #33f;
+				}
+				text {
+					font-size: 10px;
+				}
+			}
+
+			&[data-status=bad] {
+				.device {
+					fill: #a44;
+				}
+			}
+
+			&[data-status=good] {
+				.device {
+					fill: #4a4;
+				}
+			}
+
+			&[data-status=soso] {
+				.device {
+					fill: #a84;
+				}
+			}
+		}
+
+		.link {
+			stroke: #444;
+			stroke-width: 2px;
+		}
+	}
+}

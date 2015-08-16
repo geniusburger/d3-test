@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.icon-large.min.css">
+	<link rel="stylesheet" href="main.css">
+	<title>d3-test</title>
+</head>
+<body>
+	<p>
+		<button type="button" class="btn btn-default" data-bind="click: toggleFixed">Toggle</button>
+		<span class="label label-default">
+			<span class="glyphicon glyphicon-lock"></span>
+			<span class="label label-default" data-bind="text: fixedState"></span>
+		</span>
+		<span class="label label-primary" data-bind="text: lastClicked"></span>
+	</p>
+	<div class="diagram">
+	</div>
+	<p id="m"></p>
+	<script src="bower_components/d3/d3.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/knockout/dist/knockout.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
